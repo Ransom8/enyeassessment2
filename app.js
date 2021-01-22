@@ -56,4 +56,4 @@ app.use((err, req, res, next) => {
   });
 })
 
-app.listen(3000, () => console.info("Server connected successfully!"));
+app.listen(proces.env.PORT || 3000, () => console.info("Server connected successfully!"));
