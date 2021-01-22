@@ -5,7 +5,8 @@ const AppError = require('./utils/appError');
 const app = express();
 
 app.get('/', (req, res, next)=>{
-  res.send('<h1>Welcome to currency conversion app</h1>');
+  res.send('<h1>Welcome to currency conversion app</h1>' +
+  '<p> click <a href="https://currency-i.herokuapp.com/api/rates?base=CZK&currency=EUR,GBP,USD">here</a> to test</p>');
 });
 
 app.get('/api/rates', async (req, res, next) => {
