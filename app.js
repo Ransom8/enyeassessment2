@@ -4,6 +4,10 @@ const AppError = require('./utils/appError');
 
 const app = express();
 
+app.get('/', (req, res, next)=>{
+  res.send('<h1>Welcome to currency conversion app</h1>');
+});
+
 app.get('/api/rates', async (req, res, next) => {
 
   try {
