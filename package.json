@@ -1,0 +1,17 @@
+{
+ "name": "currency-app",
+ "version": "1.0.0",
+ "description": "",
+ "main": "app.js",
+ "scripts": {
+"start": "node app" },
+ "author": "",
+ "license": "ISC",
+ "dependencies": {
+  "express": "^4.17.1",
+  "superagent": "^6.1.0"
+ },
+ "engines": {
+     "node":">=10.0.0"
+ }
+}
